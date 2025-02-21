@@ -1,0 +1,132 @@
+/*margin: 0 auto; - para centralizar todo corpo */
+#corpo{
+	width: 95%;
+	height: 95%;
+	margin: 0 auto;
+	
+}
+#cabecalho{
+	width: 100%;
+	height: 130px;
+	
+	
+	
+}
+
+#plogo{
+	
+	text-align:center;
+	
+}
+#imglogo{
+	width: 400px;
+	height: 130px;
+	
+	
+}
+/* A position propriedade especifica o tipo de método de posicionamento 
+usado para um elemento (estático, relativo, fixo, absoluto ou fixo).
+Um elemento com position: relative;é posicionado em relação à sua posição normal.
+
+relative - Definir as propriedades superior, direita, inferior e esquerda de um 
+elemento relativamente posicionado fará com que ele seja ajustado para 
+longe de sua posição normal.*/
+#link{
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+#meio{
+	width: 100%;
+	height: 635px;
+	
+}
+#ladoesq{
+	width: 30%;
+	height: 635px;
+	float:left;
+	
+	
+}
+#ladodir{
+	width: 70%;
+	height: 635px;
+	float: right;
+	
+}
+#rodape{
+	width: 100%;
+	height: auto;
+	
+	
+}
+/* A @media regra é usada em consultas de mídia para aplicar estilos 
+diferentes para diferentes tipos / dispositivos de mídia.
+Layout responsivo - faz as duas colunas / caixas empilharem sobre
+um ao outro em vez de um ao lado do outro, em telas pequenas
+max-width: 600px - A largura máxima da área de exibição, 
+como uma janela do navegador 
+......................................
+Uma media query consiste de um media type e pelo menos uma expressão 
+que limita o escopo das folhas de estilo usando media features, 
+tal como largura, altura e cor. Media queries, adicionadas no CSS3, 
+deixam a apresentação do conteúdo adaptado a uma gama especifica de 
+dispositivos não precisando mudar o conteúdo em si
+
+all - Padrão. Usado para todos os dispositivos do tipo de mídia
+screen - Usado para telas de computador, tablets, smartphones etc.
+
+max-width - A largura máxima da área de exibição, como uma janela do navegador
+min-width - A largura mínima da área de exibição, como uma janela do navegador
+
+@media only screen and*/
+@media (max-width: 100px) {
+	 nav, div, #corpo, #cabecalho, #plogo, #imglogo, #menu, 
+	 #ladoesq, #ladodir {
+		width: 100%;
+		height: auto;
+		
+	  }
+	  #imglogo{
+		width: 400px;
+		height: 130px;
+		
+		
+	}
+	#rodape{
+		width:100%;
+		height: auto;
+		
+	}
+	table{
+		width:100%;
+		height: auto;
+	}
+	
+}
+@media all and (max-width: 800px){
+	#imgadm{
+		width:100%;
+		height: auto;
+		
+	}
+	h2{
+		text-align:right;
+	}
+	img{
+		width: 50%;
+	}
+	.imglocalizacao{
+		width:100%;
+		height: 0 auto;
+	}
+	.imgmapa{
+		width:20%;
+		height: 0 auto;
+	}
+}
+
+
+
+
+

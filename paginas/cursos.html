@@ -1,0 +1,223 @@
+<?php
+session_start();
+if(isset($_SESSION['nome_usu_sessao'])){
+    echo'Olá'.$_SESSION['nome_usu_sessao'].',tudo certinho!
+	seja bem vindo!';
+	echo "<a href='cadastro.php?logout'>Sair</a>";
+}if(isset($_GET['logout'])){
+session_destroy();
+header("Location: index.php");
+}	
+?>
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="shortcut icon" type="image/x-icon" href="imagens/Senac.ico">
+		<link rel="stylesheet" type="text/css" href="../paginas/css/menu.css">
+		<link rel="stylesheet" type="text/css" href="../paginas/css/corpo.css">
+		<link rel="stylesheet" type="text/css" href="../paginas/css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="../paginas/css/cursos_livres.css">
+	    <title> Senac Tech </title>
+	</head>
+	
+    <body>
+	<div id="link"><!--abertura da div link-->
+	    <input type="checkbox" id="bt_menu">
+	    <label for="bt_menu">&#9776;</label>
+	    <nav id="menu">
+	      
+	        <ul>
+		         <li><a href="../modelo.html">HOME </a></li>
+		         <li><a href="../paginas/cursos.html">Cursos</a> 
+				 
+			      <ul>
+					     <li><a href="../paginas/TecInfo.html">Técnico de Informática</a></li>
+						  <li><a href="../paginas/TecRedes.html">Técnico de Redes</a></li>
+						   <li><a href="../paginas/TecAdm.html">Técnico em Administração</a></li>
+						    <li><a href="../paginas/DevSis.html">Desenvolvedor de Sistemas</a></li>
+						     <li><a href="../paginas/jogos.html">Programação de Jogos Digitais</a></li>
+						       <li><a href="#cl">Cursos Livres</a></li>
+						    
+					</ul>
+				</li>	
+		            <li><a href="../paginas/localizacao.html">Localização</a> </li>    
+		            <li><a href="../paginas/cadastro.html" >Cadastre-se</a></li>
+		        
+			</ul>
+			    
+	  </nav>
+	  </div><!--fechamento da div link-->
+	      <br>
+		  <br>
+		  <br>
+		  <hr>
+		  <h2 align="left">
+	    <img src="../imagens/tecnicoeminformatica.jpg" alt="Técnico em informática"
+		width="300" height="168" align="right" hspace="8" vspace="50"
+		title="Técnico em informática"> 
+	    <a href="TecInfo.html">Técnico em Informática </a></h2>
+		<br>
+		<hr>
+        <h4 align="left">
+Curso profissionalizante em que os alunos aprenderão a montar e a fazer a manutenção de microcomputadores, a instalar e configurar redes, a desenvolver sistemas e websites. Ao concluir o curso, os participantes tornam-se capacitados para atuarem em diversos setores da área de tecnologia da informação.
+
+Este curso tem previsão de recesso escolar de 16 dias em janeiro, 16 dias em julho e 7 dias em dezembro (períodos sujeitos a alterações). As datas serão informadas pela coordenação do curso.
+Carga horária: 1200 horas
+
+Pré-requisito
+Escolaridade mínima: cursando 2º ano do ensino médio
+	     </h4>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <h2 align="left">
+		 <img src="../imagens/tecRedesComputadores.jpg" alt="Redes"
+		width="300" height="168" align="right" hspace="8" vspace="50"
+		title="Redes">
+         <hr>
+	    <a href="TecRedes.html">Técnico em redes</a></h2> 
+		<br>
+		<hr>
+		<h4 align="left">
+		O técnico em redes de computadores é o profissional que projeta a rede tanto na questão lógica quanto na física, também realiza a instalação, configuração e manutenção em redes de computadores, instala e configura roteadores e switchs. Faz a implementação e administração de sistemas operacionais em redes de computadores e implementando políticas de segurança.
+
+Este curso tem previsão de recesso escolar de 16 dias em janeiro, 16 dias em julho e 7 dias em dezembro (períodos sujeitos a alterações). As datas serão informadas pela coordenação do curso.
+Carga horária: 1000 horas
+
+Pré-requisito
+Escolaridade mínima: cursando 2º ano do ensino médio
+         </h4>
+	     <br>
+		 <br>
+		 <br>
+		 <br>
+		 <h2 align="left">
+	     <img src="../imagens/tecnicoemadministracao.jpg" alt="Técnico em administração"
+		width="300" height="168" align="right" hspace="8" vspace="50"
+		title="Técnico em administração"> 
+		<hr>
+	    <a href="TecAdm.html">Técnico em administração</a></h2>
+        <br>		
+		<hr>
+		<h4 align="left">
+	    O curso tem como objetivo desenvolver o aluno para executar atividades administrativas da organização relacionadas aos processos de gestão de pessoas, operações logísticas, gestão de materiais e patrimônio, marketing, vendas e finanças.
+
+Este curso tem previsão de recesso escolar de 16 dias em janeiro, 16 dias em julho e 7 dias em dezembro (períodos sujeitos a alterações). As datas serão informadas pela coordenação do curso.
+Carga horária: 1000 horas
+
+Pré-requisito
+Escolaridade mínima: cursando 2º ano do ensino médio
+	     </h4>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <h2 align="left">
+		 <img src="../imagens/desenvolvedor.jpg" alt="Desenvolvedor de sistemas"
+		width="300" height="168" align="right" hspace="8" vspace="50"
+		title="Desenvolvedor de sistemas"> 
+		<hr> 
+		<a href="DevSis.html">Desenvolvedor de sistemas</a></h2> 
+		<br>
+		<hr>
+		<h4 align="left">
+	    Objetivo:
+Curso profissionalizante em que o aluno aprende a desenvolver um sistema utilizando ferramentas de análise, documentação UML, base de dados e linguagem de programação, realizando sua codificação e implementação de forma a atender a necessidade do cliente.
+
+Carga horária: 380 horas
+
+Pré-requisito
+Escolaridade mínima: ensino fundamental completo
+	     </h4>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <h2
+		 <hr>
+         <a href="jogos.html">Programação de jogos digitais</a></h2>
+		 <br>
+		 <hr>
+		 <p align="center">
+	     <iframe width="490" height="281" src="https://www.youtube.com/embed/qrJvL8aC_uU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 <h4 align="center">
+	     Habilitar o aluno para o desenvolvimento de jogos digitais para web e dispositivos móveis, desempenhando funções relativas à produção de conteúdo para games, ao desenvolvimento de games adaptáveis a diferentes plataformas e ao controle de qualidade de jogos digitais.
+
+A proposta foi estruturada contemplando as exigências do mercado no que diz respeito ao desenvolvimento de conteúdo para games (roteiros, textos, imagens, estruturas de códigos, sons e trilhas sonoras), ao próprio desenvolvimento de games para web e dispositivos móveis e ao aprimoramento e controle de qualidade de jogos digitais com base na utilização de engenharia de software, além da identificação de oportunidades de negócio para empreendimentos do setor.
+
+Este curso tem previsão de recesso escolar de 16 dias em janeiro, 16 dias em julho e 7 dias em dezembro (períodos sujeitos a alterações). As datas serão informadas pela coordenação do curso.
+
+Carga horária: 1000 horas
+
+Pré-requisito
+Escolaridade mínima: cursando 2º ano do ensino médio
+	      </h4>
+	      </p>
+		  <hr>
+	      <h2 id="cl">Cursos livres</h2>
+	      <br>
+		  <br>
+		 <div id="rodape">
+		  <table>
+		     <thead>
+			     <tr>
+				    <td><h3 id="curso">Curso</h3></td>
+					<td><h3 id="ca">Carga horária</h3></td>
+				 </tr>
+			 </thead>
+	         <tbody>
+			     <tr>
+			        <td><h3>Análise de dados com power BI</h3></td>
+			        <td><h3>21h</h3></td>
+					<td><h5> Inscrições abertas</h5></td>
+				 </tr>
+				 <tr>
+			        <td><h3>Analista de marketing digital</h3></td>
+			        <td><h3>48h</h3></td>
+					<td><h5> Inscrições abertas</h5></td>
+				 </tr>
+				 <tr>
+			        <td><h3>Auto Cad 3D</h3></td>
+			        <td><h3>48h</h3></td>
+					<td><h5> Inscrições abertas</h5></td>
+				 </tr>
+				 <tr>
+			        <td><h3>Corel Draw</h3></td>
+			        <td><h3>48h</h3></td>
+					<td><h5> Inscrições abertas</h5></td>
+				 </tr>
+				 <tr>
+			        <td><h3>Designer Gráfico</h3></td>
+			        <td><h3>264h</h3></td>
+					<td><h5> Inscrições abertas</h5></td>
+				
+			 		 			 			 		 			 		 
+			 	</tbody>	 		 
+			 
+	         	
+			     						
+             
+		 		 		 
+			</table>
+		  
+        		
+	             <hr>
+				 <br>
+				 <br>
+				 <br>
+		         <p align="center">
+		         <a href="#link">
+		         <img src="imagens/seta.png" alt="seta" width="68"
+		         height="68" title="subir para o topo da página">
+	             </a>
+				 </div>
+		         </p>
+					
+		</body>
+	
+							
+</html>	

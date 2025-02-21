@@ -1,0 +1,85 @@
+<?php
+session_start();
+if(isset($_SESSION['nome_usu_sessao'])){
+    echo'Olá'.$_SESSION['nome_usu_sessao'].',tudo certinho!
+	seja bem vindo!';
+	echo "<a href='cadastro.php?logout'>Sair</a>";
+}if(isset($_GET['logout'])){
+session_destroy();
+header("Location: index.php");
+}	
+?>
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../paginas/css/menu.css">
+		<link rel="stylesheet" type="text/css" href="../paginas/css/corpo.css">
+		<link rel="shortcut icon" type="image/x-icon" href="imagens/Senac.ico">
+		
+	    <title> Senac tech </title>
+	</head>
+	<body>
+	<div id="link"><!--abertura da div link-->
+	<input type="checkbox" id="bt_menu">
+	<label for="bt_menu">&#9776;</label>
+	   <nav id="menu">
+	      
+	        <ul>
+		         <li><a href="../modelo.html">HOME </a></li>
+		         <li><a href="../paginas/cursos.html">Cursos</a>
+				 
+			      <ul>
+					     <li><a href="../paginas/TecInfo.html">Técnico de Informática</a></li>
+						  <li><a href="../paginas/TecRedes.html">Técnico de Redes</a></li>
+						   <li><a href="../paginas/TecAdm.html">Técnico em Administração</a></li>
+						    <li><a href="../paginas/DevSis.html">Desenvolvedor de Sistemas</a></li>
+						     <li><a href="../paginas/jogos.html">Programação de Jogos Digitais</a></li>
+						      <li><a href="#">Cursos Livres</a></li>
+					</ul>
+					</li>
+		                
+		         <li><a href="../paginas/cadastro.html" >Cadastre-se</a></li>
+		        
+			</ul>
+			    
+	  </nav>
+	  </div><!--fechamento da div link-->
+           <br>
+   		   <h3 align="center" >
+		Localização
+		   <br>
+		   <br>
+	<img class="imglocalizacao" src="imagens/senactech.jpg"  alt="Senac"
+		title="Senac">
+		<br>
+		<br>
+		<br>
+    <a href="http://g.co/maps/m68kp" target="blank">	
+	<img class="imgmapa" src="imagens/mapa.jpg" alt="Google Maps" 
+		width="68" height="68" hspace="500" align="right" 
+		title="maps"> 
+		</a>
+    <a href="http://g.co/maps/m68kp" target="blank">	
+	<img class="imgmapa"src="imagens/endereço.png" alt="endereço" 
+		width="68" height="68" hspace="500" align="left" 
+		title="endereço" vspace="1"> 
+		</a>
+		
+Av. Venâncio Aires, 93 - Azenha, Porto Alegre - RS, 90040-191
+
+
+
+
+
+senacrs.com.br
+
+
+(51) 3288-7750
+
+
+    </body>
+</html>	
+	

@@ -1,0 +1,63 @@
+/*
+margin: O auto - centralizar a tabela
+*/
+table{
+	margin: 0 auto;
+	border-color: blue;
+	border-style: double;
+	width: 700px;
+	stable-layout: fixed;
+	border-spacing: 10px;
+}
+#curso{
+    color: black;
+	font-size: 30px ;
+	font-style: italic;
+	
+}
+#curso:hover{
+	 background-color: blue;
+	
+}
+#ca{
+	color: black;
+	font-size: 30px ;
+	font-style: italic;
+}
+#ca:hover{
+	background-color: blue;
+}
+td{
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	background-color: #4caf50;
+	color: white;
+}
+
+td:hover{
+	background-color: red;
+	font-size: 30px;
+}
+/*
+td:nth-child(even) {
+	background-color: red;
+}
+(odd)mexe nas linhas pares (even)mexe nas linhas impares
+
+tr:nth-child(even) {
+	background-color: yellow;
+}*/
+/* mudanças na tabela e vídeo */
+@media (max-width: 800px){
+	table{
+	
+	width: 100%;
+	height: auto;
+	
+}
+iframe {
+	width: 100%;
+	height: auto;
+}
+	
+}

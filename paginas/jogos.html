@@ -1,0 +1,108 @@
+<?php
+session_start();
+if(isset($_SESSION['nome_usu_sessao'])){
+    echo'Olá'.$_SESSION['nome_usu_sessao'].',tudo certinho!
+	seja bem vindo!';
+	echo "<a href='cadastro.php?logout'>Sair</a>";
+}if(isset($_GET['logout'])){
+session_destroy();
+header("Location: index.php");
+}	
+?>
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" type="text/css" href="../css/menu.css">
+		<link rel="stylesheet" type="text/css" href="../paginas/css/corpo.css">
+		<link rel="shortcut icon" type="image/x-icon" href="imagens/Senac.ico">
+		
+	    <title> Senac tech </title>
+	</head>
+	<body>
+	<div id="link"><!--abertura da div link-->
+	    <input type="checkbox" id="bt_menu">
+	    <label for="bt_menu">&#9776;</label>
+	<nav id="menu">
+	      
+	        <ul>
+		            <li><a href="../modelo.html">HOME </a></li>
+		              <li><a href="../paginas/cursos.html">Cursos</a> 
+				 
+			      <ul>
+					     <li><a href="../paginas/TecInfo.html">Técnico de Informática</a></li>
+						  <li><a href="../paginas/TecRedes.html">Técnico de Redes</a></li>
+						   <li><a href="../paginas/TecAdm.html">Técnico em Administração</a></li>
+						    <li><a href="../paginas/DevSis.html">Desenvolvedor de Sistemas</a></li>
+						     <li><a href="#">Cursos Livres</a></li>
+					</ul>
+				
+		            <li><a href="../paginas/localizacao.html">Localização</a> </li>    
+		            <li><a class="iright" href="../paginas/cadastro.html" >Cadastre-se</a></li>
+		        
+			</ul>
+			    
+	  </nav>
+    </div><!--fechamento da div link-->        
+	  
+	    <img id="imgadm" src="imagens/jogos.jpg" alt="jogos digitais"
+		width="1350" height="300" align="center" hspace="150"
+		title="jogos digitais">
+		<br>
+		<h1 align="left">Jogos Digitais - 1000 Horas</h1>
+	<hr>
+	<br>
+	O sistema de informação cria milhares de dados todos os dias, o profissional que integra esses dados e transforma em informações relevantes para empresas, 
+	está em grande ascensão. O Técnico em Desenvolvimento de Sistema – Bilíngue surge para suprir uma demanda de mercado, desenvolve sistemas completos e com 
+	a habilidade conversacional em língua inglesa. O grande crescimento na área da tecnologia de informação, são as necessidades de atuação a nível global, 
+	formando as unidades curriculares e as habilitações intermediarias, como: assistente de banco de dados e assistente de desenvolvimento de sistemas 
+	(full stack). Este curso, é ideal para as pessoas que estejam cursando a partir do 2º ano do ensino médio e a idade mínima exigida de 15 anos completos. 
+	A equipe docente é composta?por?profissionais com experiência na área e formação superior. Após concluir este curso, o certificado de Técnico em 
+	Desenvolvimento de Sistemas, estará disponível e com validade nacional. Faça o curso Técnico em Desenvolvimento de Sistemas – Bilíngue, aumente suas 
+	possibilidades de atuar em grandes organizações multinacionais e esteja apto a ser um profissional altamente qualificado!
+	<br>
+    <br>	
+	    <h1 align="left">Turmas abertas</h1>
+	<hr>
+	    <table align="center">
+		     <thead>
+			     <tr>
+				    <td align="center"><h3>Início</h3></td>
+					<td align="center"><h3>Término</h3></td>
+				 </tr>
+			 </thead>
+	         <tbody>
+			     <tr>
+			        <td align="center"><h3>04/05/2020</h3></td>
+			        <td align="center"><h3>03/11/2021</h3></td>
+					<td align="center"><h5>Opção 1</h5></td>
+				 </tr>
+				 <tr>
+			        <td align="center"><h3>01/06/2020</h3></td>
+			        <td align="center"><h3>03/11/2021</h3></td>
+					<td align="center"><h5> Opção 2</h5></td>
+				 </tr>
+				 <tr>
+			        <td align="center"><h3>01/06/2020</h3></td>
+			        <td align="center"><h3>03/11/2021</h3></td>
+					<td align="center"><h5>Opção 3</h5></td>
+				 </tr>
+				 <tr>
+			        <td align="center"><h3>10/08/2020</h3></td>
+			        <td align="center"><h3>18/12/2021</h3></td>
+					<td align="center"><h5>Opção 4</h5></td>
+				 </tr>				 			 		 			 			 		 			 		 			 		 		 
+			 </tbody>	         				     						             		 		 		 
+		</table>			
+	
+	
+	</body>
+</html>		
+	
+	
+	
+	
+	
+	
